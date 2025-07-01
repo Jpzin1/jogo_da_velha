@@ -3,7 +3,6 @@ from tkinter import font
 from functools import partial
 
 # --- LÓGICA DA IA (MINIMAX) ---
-# Nenhuma alteração nesta seção. Continua robusta.
 JOGADOR_HUMANO = 'X'
 JOGADOR_IA = 'O'
 
@@ -152,7 +151,7 @@ class TicTacToeGUI:
         self.status_label.config(text=message)
         if combo:
             self.draw_winning_line(combo, color)
-            self._highlight_winning_cells(combo, color) # <<< ALTERAÇÃO AQUI
+            self._highlight_winning_cells(combo, color)
         
         for button in self.buttons:
             button.config(state='disabled')
@@ -184,7 +183,7 @@ class TicTacToeGUI:
         self.line_canvas.delete("all")
         for button in self.buttons:
             # Reseta o botão para o estado e cor originais
-            button.config(text=' ', state='normal', bg=self.original_button_color) # <<< ALTERAÇÃO AQUI
+            button.config(text=' ', state='normal', bg=self.original_button_color)
 
 # --- Execução do Programa ---
 if __name__ == "__main__":

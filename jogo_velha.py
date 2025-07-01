@@ -59,7 +59,7 @@ def encontrar_melhor_jogada(tab):
 class TicTacToeGUI:
     def __init__(self, root):
         self.root = root
-        self.root.title("Jogo da Velha - IA (Com Destaque)")
+        self.root.title("Jogo da veia")
         self.root.resizable(False, False)
         
         # Constante para o tamanho de cada célula do jogo
